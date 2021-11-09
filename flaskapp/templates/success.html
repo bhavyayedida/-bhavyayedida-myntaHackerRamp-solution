@@ -1,0 +1,142 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>myntra</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<style>
+    .form{
+        background-color:pink;
+    }
+</style>
+<body class="bdy" bg>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../static/myntralogo.png" width="125px">
+            </div>
+            <div class="nav">
+                <a class="list" href="">MEN</a>
+                <a class="list" href="">WOMEN</a>
+                <a class="list" href="">KIDS</a>
+                <a class="list" href="">HOME & LIVING</a>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <h4>BEAUTY</h4>
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Makeup Recommendation</a>
+                        <a href="#">Skincare,Bath & Body</a>
+                        <a href="#">Baby Care</a>
+                        <a href="#">Masks</a>
+                        <a href="#">HairCare</a>
+                        <a href="#">Frangrances</a>
+                        <a href="#">Appliances</a>
+                        <a href="#">Bueaty Gift & Makeup set</a>
+                    </div>
+                </div>
+                <div class="search">
+                    <form class="example">
+                        <input type="text"
+                               placeholder="&nbsp; Search for products,brands and more"
+                               name="search">
+                    </form>
+                </div>
+            </div>
+
+            <div class="icon">
+
+                <li class="li"><img class="bag" src="../static/profile.png" width="30px" height="30px" hspace=5 vspace=5></li>
+                <li class="li"><img class="bag" src="../static/whistlist.png" width="30px" height="30px" hspace=5 vspace=5></li>
+                <li class="li"><img class="bag" src="../static/bag.png" width="30px" height="30px" hspace=5 vspace=5></li>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <div class="form" >
+        
+        <br>
+        <p>Here is your Makeup look for {{name}} <br></p>
+        <br>
+        <img src="{{link}}" align="middle" height="300px" width="250px" /> 
+        <br> <br>
+        <div class="products">
+            <a  class="image1" href="/lipstick"> <img src="{{url_for('static', filename='product11.jpg')}}" align="middle" height="150" width="150px" />  </a>
+            <a  class="image2" href="/blush"> <img src="{{url_for('static', filename='product31.jpg')}}" align="middle" height="150px" width="150px" />  </a>
+            <a  class="image3" href="/eyeshadow"> <img src="{{url_for('static', filename='product21.jpg')}}" align="middle" height="150px" width="150px"/> </a>
+            <br>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1" id="footercol">
+                    <h3 class="subheads">ONLINE SHOPPING</h3>
+                    <ul class="no-bullets">
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>Kids</li>
+                        <li>Home & Living</li>
+                        <li>Beauty</li>
+                        <li>Gift Cards</li>
+                        <li>Myntra Insider</li>
+                    </ul>
+                </div>
+                <div class="footer-col-2" id="footercol">
+                    <h3 class="subheads">USEFUL LINKS</h3>
+                    <ul class="no-bullets">
+                        <li>Contact Us</li>
+                        <li>FAQ</li>
+                        <li>T&C</li>
+                        <li>Terms Of Use</li>
+                        <li>Shipping</li>
+                        <li>Cancellation</li>
+                        <li>Returns</li>
+                        <li>Whitehat</li>
+                        <li>Blog</li>
+                        <li>Carrers</li>
+                        <li>Privacy policy</li>
+                        <li>Site Map</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3" id="footercol">
+                    <h3 class="subheads">EXPERIENCE MYNTRA APP ON MOBILE</h3>
+                    <img src="../static/googlePlay.png" height="40" width="120" />
+                    <img src="../static/appleStore.png" height="40" width="120" />
+                    <h3 class="subheads">KEEP IN TOUCH</h3>
+                    <div class="logos">
+                        <a href="#" class="fa fa-facebook">
+                            <img src="../static/facebook.png" height="20" width="22" />
+                        </a>
+                        <a href="#" class="fa fa-twitter">
+                            <img src="../static/twitter.png" height="20" width="22" />
+                        </a>
+                        <a href="#" class="fa fa-youtube">
+                            <img src="../static/youtube.png" height="20" width="22" />
+                        </a>
+                        <a href="#" class="fa fa-instagram">
+                            <img src="../static/insta.png" height="20" width="22" />
+                        </a>
+                    </div>
+
+                </div>
+                <div class="footer-col-3" id="footercol">
+                    <p>
+                        <img src="../static/original.png" height="50" width="50" />  <h3>100% ORIGINAL</h3>
+                    </p>
+                    <br />
+                    <p>
+                        <img src="../static/30.png" height="50" width="50" /> <h3>Return within 30days</h3>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
